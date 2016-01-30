@@ -1,7 +1,99 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<html lang="it" ng-app="YIT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <meta http-equiv="Access-Control-Allow-Origin" content="*"/>
+  <title>Your Italian Teacher Valeria</title>
+  <style>
+    [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+      display: none !important;
+    }
+  </style>
+
+  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans|Dancing+Script' rel='stylesheet' type='text/css'>
+</head>
+<body ng-cloak="">
+
+  <!--
+  <md-toolbar>
+    <div class="md-toolbar-tools">
+      <span flex></span>
+      <h2 id="logo">
+        <span class="ds">Your Italian Teacher {{bigScreen}}</span>
+      </h2>
+      <span flex></span>
+      <md-button href="#/home">Home</md-button>
+      <md-button href="#/lessons">Lessons</md-button>
+      <span flex></span>
+    </div>
+  </md-toolbar>
+
+
+  -->
+
+  <md-toolbar>
+    <div class="md-toolbar-tools" >
+      <h2 class="logo ds" hide-gt-xs>
+        <span>YIT</span>
+      </h2>
+      <span flex hide-gt-xs></span>
+      <md-menu md-offset="0 -7" hide-gt-xs>
+        <md-button aria-label="menu" class="md-icon-button" ng-click="$mdOpenMenu($event)">
+          <md-icon md-font-icon="fa-bars" class="fa md-hue-2 menu"></md-icon>
+        </md-button>
+        <md-menu-content width="2">
+          <md-menu-item>
+            <md-button href="#/home" ng-click="">
+              <span md-menu-align-target>Home</span>
+            </md-button>
+          </md-menu-item>
+          <md-menu-item>
+            <md-button href="#/lessons" ng-click="">
+              <span md-menu-align-target>Lessons</span>
+            </md-button>
+          </md-menu-item>
+          <md-menu-item>
+            <md-button href="#/materials" ng-click="">
+              <span md-menu-align-target>Materials</span>
+            </md-button>
+          </md-menu-item>
+        </md-menu-content>
+      </md-menu>
+
+
+
+      <span flex hide-xs></span>
+      <h2 class="logo ds" hide-xs>
+        <span>Your Italian Teacher</span>
+      </h2>
+      <span flex hide-xs></span>
+      <md-button href="#/home" hide-xs>Home</md-button>
+      <md-button href="#/lessons" hide-xs>Lessons</md-button>
+      <md-button href="#/lessons" hide-xs>Materials</md-button>
+      <span flex hide-xs></span>
+
+    </div>
+  </md-toolbar>
+
+
+  <md-content class="page" ng-view autoscroll>
+
+  </md-content>
+
+  <div class="footer" layout="row" layout-align="end center">
+      <md-button aria-label="menu" class="md-icon-button">
+        <md-icon md-font-icon="fa-twitter" class="fa md-hue-2 menu"></md-icon>
+      </md-button>
+      <md-button aria-label="menu" class="md-icon-button">
+        <md-icon md-font-icon="fa-facebook-official" class="fa md-hue-2 menu"></md-icon>
+      </md-button>
+      <md-button aria-label="menu" class="md-icon-button">
+        <md-icon md-font-icon=" fa-youtube" class="fa md-hue-2 menu"></md-icon>
+      </md-button>
+  </div>
+
+  <script src="dist/app.js"></script>
 </body>
 </html>

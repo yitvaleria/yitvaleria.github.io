@@ -1,0 +1,38 @@
+<div class="small-stripe" layout="row"></div>
+<md-content layout="row">
+  <span flex hide-xs></span>
+  <div flex-gt-xs="60" flex-xs class="lessons os" layout-padding="">
+    <h3>Prenota una Trial Lesson</h3>
+    <p>Inserisci il tuo nome e il tuo indirizzo email per prenotare.</p>
+    <p>È consigliabile utilizzare un indirizzo gmail per selezionare la data
+    e l'ora della trial tramite il Google Calendar che verrà condiviso con te
+      una volta ricevuto il pagamento.<br>Nel caso in cui non avessi un indirizzo gmail ti
+      contatterò per concordare la data della trial.</p>
+
+    <form name="trialForm">
+      <md-input-container class="md-block">
+        <label>Il tuo nome</label>
+        <input required name="customerName" ng-model="trial.customer.name">
+        <div ng-messages="trialForm.customerName.$error">
+          <div ng-show="trialForm.customerName.$invalid" ng-message="required">This is required.</div>
+        </div>
+      </md-input-container>
+      <md-input-container class="md-block">
+        <label>La tua email</label>
+        <input required type="email" name="customerEmail" ng-model="trial.customer.email"
+               minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/" />
+        <div ng-messages="trialForm.customerEmail.$error" role="alert">
+          <div ng-show="trialForm.customerEmail.$invalid" ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+            Your email must be between 10 and 100 characters long and look like an e-mail address.
+          </div>
+        </div>
+      </md-input-container>
+      <div layout="row" layout-align="end center">
+        <md-button ng-disabled="trialForm.$invalid" class="md-raised md-primary">Continua</md-button>
+      </div>
+
+    </form>
+
+  </div>
+  <span flex hide-xs></span>
+</md-content>
