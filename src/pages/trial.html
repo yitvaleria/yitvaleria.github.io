@@ -14,7 +14,7 @@
         <label>Il tuo nome</label>
         <input required name="customerName" ng-model="trial.customer.name">
         <div ng-messages="trialForm.customerName.$error">
-          <div ng-show="trialForm.customerName.$invalid" ng-message="required">This is required.</div>
+          <div ng-show="trialForm.customerName.$invalid" ng-message="required">Questo è un campo obbligatorio.</div>
         </div>
       </md-input-container>
       <md-input-container class="md-block">
@@ -23,12 +23,13 @@
                minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/" />
         <div ng-messages="trialForm.customerEmail.$error" role="alert">
           <div ng-show="trialForm.customerEmail.$invalid" ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
-            Your email must be between 10 and 100 characters long and look like an e-mail address.
+            Devi inserire un indirizzo email valido.
           </div>
         </div>
       </md-input-container>
       <div layout="row" layout-align="end center">
-        <md-button ng-disabled="trialForm.$invalid" class="md-raised md-primary">Continua</md-button>
+        <!--<md-button ng-disabled="trialForm.$invalid" class="md-raised md-primary" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3DMVHZ5WC98W2&custom={{trial.customer.email}}_{{trial.customer.name}}">Continua</md-button>-->
+        <md-button ng-disabled="trialForm.$invalid" class="md-raised md-primary" href="https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=G2LYQRHN49L2N&custom={{trial.customer.email}}_{{trial.customer.name}}">Continua</md-button>
       </div>
 
     </form>

@@ -20,6 +20,12 @@ function config($routeProvider, $locationProvider, $mdIconProvider,$mdThemingPro
         template: require('./pages/trial.html'),
         controller: "TrialCtrl as trial"
       })
+      .when('/trialok', {
+        template: require('./pages/trialok.html')
+      })
+      .when('/trialko', {
+        template: require('./pages/trialko.html')
+      })
       .otherwise({
         redirectTo: '/home'
       })

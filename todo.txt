@@ -1,0 +1,24 @@
+- link paypal payment passing name and emailn
+- create back page for paypal link + VERIFICARE TESTI + AGGIUNGERE LINK AL BOTTONE VERO
+
+- link twitter account
+- link facebook account
+- link youtube account
+
+- favicon
+- rivedere termini e condizioni  -------OK
+
+- create medium blog
+- link to blog /materiale
+
+- change presentation video
+- add google analytics
+
+- create social media strategy
+- make artworks for twitter page
+- make artworks for facebook page
+- make artworks for youtube page
+
+- launch
+
+- make money
