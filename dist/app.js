@@ -96,7 +96,7 @@
 	      this.$scope.$on('$viewContentLoaded', function (event) {
 	
 	        if (_this.$location.absUrl().indexOf('localhost:') === -1) {
-	          _this.$window.ga('sendpageview', { page: _this.$location.path() });
+	          _this.$window.ga('send', 'pageview', { page: _this.$location.path() });
 	        }
 	      });
 	    }

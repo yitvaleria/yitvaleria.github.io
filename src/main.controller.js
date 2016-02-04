@@ -12,7 +12,7 @@ class MainCtrl {
     this.$scope.$on('$viewContentLoaded', event => {
 
       if (this.$location.absUrl().indexOf('localhost:') === -1) {
-        this.$window.ga('sendpageview', { page: this.$location.path() });
+        this.$window.ga('send','pageview', { page: this.$location.path() });
       }
 
     })
