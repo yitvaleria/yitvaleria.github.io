@@ -17,7 +17,7 @@
   <link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet' type='text/css'>
 </head>
 <body ng-cloak="" ng-controller="MainCtrl as main">
-
+  <div id="toastBounds" style="display:block"></div>
   <md-toolbar>
     <div class="md-toolbar-tools" >
       <h2 class="logo ds" hide-gt-xs>
@@ -40,7 +40,7 @@
             </md-button>
           </md-menu-item>
           <md-menu-item>
-            <md-button href="#/materials" ng-click="">
+            <md-button href="http://blog.youritalianteacher.com" target="_blank" ng-click="">
               <span md-menu-align-target>Materials</span>
             </md-button>
           </md-menu-item>
@@ -54,9 +54,9 @@
         <span>Your Italian Teacher</span>
       </h2>
       <span flex hide-xs></span>
-      <md-button href="#/home" hide-xs>Home</md-button>
-      <md-button href="#/lessons" hide-xs>Lessons</md-button>
-      <md-button href="#/lessons" hide-xs>Materials</md-button>
+      <md-button href="#/home" hide-xs ng-click="">Home</md-button>
+      <md-button href="#/lessons" hide-xs ng-click="">Lessons</md-button>
+      <md-button href="http://blog.youritalianteacher.com" target="_blank" hide-xs ng-click="">Materials</md-button>
       <span flex hide-xs></span>
 
     </div>
