@@ -5,7 +5,7 @@
   <meta name="google-site-verification" content="ZkhFTFJ1JOfR1nAdAcrz8EutNpFXgP9FVaBFZrJW6IA" />
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
   <meta http-equiv="Access-Control-Allow-Origin" content="*"/>
-  <title>Your Italian Teacher Valeria</title>
+  <title>Your Italian Teacher - Valeria</title>
   <style>
     [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
       display: none !important;
@@ -13,18 +13,16 @@
   </style>
 
   <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans|Dancing+Script' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet' type='text/css'>
+  <link href='dist/fonts/fonts.css' rel='stylesheet' type='text/css'>
 </head>
 <body ng-cloak="" ng-controller="MainCtrl as main">
   <div id="toastBounds" style="display:block"></div>
-  <md-toolbar>
+
+  <md-toolbar class="md-tall">
     <div class="md-toolbar-tools" >
-      <h2 class="logo ds" hide-gt-xs>
-        <span>YIT</span>
-      </h2>
-      <span flex hide-gt-xs></span>
-      <md-menu md-offset="0 -7" hide-gt-xs>
+      <img hide-gt-sm="" src="dist/yitlogo.png" width="75" height="75">
+      <span flex hide-gt-sm></span>
+      <md-menu md-offset="0 -7" hide-gt-sm>
         <md-button aria-label="menu" class="md-icon-button" ng-click="$mdOpenMenu($event)">
           <md-icon md-font-icon="fa-bars" class="fa md-hue-2 menu"></md-icon>
         </md-button>
@@ -49,15 +47,19 @@
 
 
 
-      <span flex hide-xs></span>
-      <h2 class="logo ds" hide-xs>
-        <span>Your Italian Teacher</span>
-      </h2>
-      <span flex hide-xs></span>
-      <md-button href="#/home" hide-xs ng-click="">Home</md-button>
-      <md-button href="#/lessons" hide-xs ng-click="">Lessons</md-button>
-      <md-button href="http://blog.youritalianteacher.com" target="_blank" hide-xs ng-click="">Materials</md-button>
-      <span flex hide-xs></span>
+      <span flex hide-sm hide-xs></span>
+
+      <img hide-xs hide-sm src="dist/yitlogo.png" width="75" height="75">
+      <div hide-xs hide-sm id="logo-big">
+        <h2 class='myimpact'>Your Italian Teacher</h2>
+        <h3 class='osbold'>tailored online lessons</h3>
+      </div>
+
+      <span flex hide-xs hide-sm ></span>
+      <md-button hide-xs hide-sm href="#/home" ng-click="">Home</md-button>
+      <md-button hide-xs hide-sm href="#/lessons" ng-click="">Lessons</md-button>
+      <md-button hide-xs hide-sm href="http://blog.youritalianteacher.com" target="_blank" ng-click="">Materials</md-button>
+      <span flex hide-xs hide-sm></span>
 
     </div>
   </md-toolbar>
@@ -68,6 +70,8 @@
   </md-content>
 
   <div class="footer" layout="row" layout-align="end center">
+      <span style="color: white" class="osbold">&copy; Your Italian Teacher - P. Iva: 03660550926 - yit.valeria [at] youritalianteacher.com</span>
+      <span flex></span>
       <md-button aria-label="menu" class="md-icon-button"  href="https://twitter.com/YitValeria" target="_blank">
         <md-icon md-font-icon="fa-twitter" class="fa md-hue-2 menu"></md-icon>
       </md-button>

@@ -1,0 +1,21 @@
+@font-face {
+    font-family: chalk;
+    src: url(./chalk.woff);
+}
+@font-face {
+    font-family: myimpact;
+    src: url(./myimpact.woff);
+}
+@font-face {
+    font-family: osbold;
+    src: url(./osbold.woff);
+}
+.chalk{
+    font-family: chalk, Arial;
+}
+.osbold{
+    font-family: osbold, cursive;
+}
+.myimpact{
+    font-family: myimpact, Verdana;
+}

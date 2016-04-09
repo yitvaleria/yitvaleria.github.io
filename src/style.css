@@ -1,16 +1,33 @@
-.os{ font-family: 'Open Sans', sans-serif; }
-.ds{ font-family: 'Kalam', cursive; }
-
-
-h2.logo span{
-  color: white;
-  font-size: 42px;
+md-toolbar.md-tall{
+    height: 95px !important;
+    min-height: 95px !important;
+    max-height: 95px !important;
+    padding-top: 15px;
 }
-h2.heading{
+.md-button{
+    font-family: osbold !important;
+
+}
+#logo-big{
+    padding-left: 10px;
+}
+#logo-big h2{
+    color: #75A43F;
+    font-size: 50px;
+}
+#logo-big h3{
+    color: #D3DACA;
+    font-size: 22px;
+    text-align: right;
+    position: relative;
+    top: -10px;
+}
+
+.heading{
+    padding: 10px;
     color: white;
-    font-size: 34px;
+    font-size: 32px;
 }
-
 h3{
     color: #417505;
     font-size: 28px;
@@ -23,7 +40,6 @@ h4{
 .fa.menu {
     color: white;
     font-size: 22px;
-
 }
 .lessons p{
     font-size: 20px;
@@ -63,18 +79,15 @@ h4{
     background-repeat: no-repeat;
     padding: 21px;
 }
-
 .footer{
     background-color: #050505;
     padding: 10px;
 }
-
 /* FADE TRANSITIONS */
 .page.ng-enter {
     transition:0.8s linear all;
     opacity:0;
 }
-
 /* The finishing CSS styles for the enter animation */
 .page.ng-enter.ng-enter-active {
     opacity:1;
