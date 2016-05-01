@@ -26,6 +26,9 @@ function config($routeProvider, $locationProvider, $mdIconProvider,$mdThemingPro
       .when('/trialko', {
         template: require('./pages/trialko.html')
       })
+      .when('/sardegna', {
+        template: require('./pages/sardegna.html')
+      })
       .otherwise({
         redirectTo: '/home'
       })

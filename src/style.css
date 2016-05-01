@@ -79,6 +79,18 @@ h4{
     background-repeat: no-repeat;
     padding: 21px;
 }
+.custom_heading1 {
+    color: #999999;
+    font-size: 24px;
+    padding-top: 25px;
+}
+.normal_text {
+    color: #262626;
+    font-size: 22px;
+    padding-top: 2px !important;
+    padding-bottom: 4px !important;
+}
+a.emph-link, a.emph-link:hover{ color: #417505;}
 .footer{
     background-color: #050505;
     padding: 10px;
